@@ -65,7 +65,8 @@ void vTaskSensorRead(void *pvParameters)
 
         xQueueSend(xLogQueue, msg, 0U);
         
-        task1_alive = 1U;       // Set alive flag
+        // Set alive flag
+        task1_alive = 1U;       
         snprintf(msg, sizeof(msg), "[T1] Sent alive heartbeat");
         xRet = xQueueSend(xLogQueue, (const void *)msg, 0U);
         if (xRet != pdTRUE) {

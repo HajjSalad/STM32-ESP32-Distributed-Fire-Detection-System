@@ -1,12 +1,14 @@
 ## 🚨 Distributed Fire Safety System
 Commercial and industrial fire safety systems require continuous, reliable environmental monitoring across distributed building zones - detecting early signs of fire through temperature, smoke, gas, and flame signatures before conditions become critical. This project implements that class of system as a distributed embedded architecture, following the sensor node and central controller pattern used in products by Honeywell, Siemens, and Bosch.  
-STM32 sensor node deployed across zones, continuously sample environmental telemetry and report to a central ESP32 Fire Alarm Control Panel (FACP) via MODBUS RTU over RS-485. The FACP aggregates data from the node for remote monitoring and alerting.
+STM32 sensor node deployed across zones, continuously sample environmental telemetry and report to a central ESP32 Fire Alarm Control Panel (FACP) via MODBUS RTU. The FACP aggregates data from the node for remote monitoring and alerting.
 
 The project is organized into four components:
 - 🟠 **STM32 Sensor Node** - environmental sensing, anomaly detection, and MODBUS slave communication
 - 🔵 **MODBUS RTU** - industrial communication protocol implemented between sensor nodes and control panel
 - 🔴 **ESP32 Fire Alarm Control Panel** - MODBUS master polling, and cloud gateway
 - 🟢 **Sensor Node PCB Design** - KiCad schematic for a custom sensor node PCB with v1/v2 revision roadmap    
+
+📓 Design notes, dev journal, and setup guides (STM32 & ESP32 project creation, design decisions) are documented in the [Project Notion Page](https://hajjsalad.notion.site/Distributed-Fire-Safety-Monitoring-302a741b5aab802db50af718beffb2eb)
     
 ![overview](./project_diagram.png)
 
