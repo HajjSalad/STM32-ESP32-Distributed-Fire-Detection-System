@@ -10,7 +10,7 @@ The project is organized into four components:
 
 📓 Design notes, dev journal, and setup guides (STM32 & ESP32 project creation, design decisions) are documented in the [Project Notion Page](https://hajjsalad.notion.site/Distributed-Fire-Safety-Monitoring-302a741b5aab802db50af718beffb2eb)
     
-![overview](./project_diagram.png)
+![overview](./overview_diagram.png)
 
 ---
 
